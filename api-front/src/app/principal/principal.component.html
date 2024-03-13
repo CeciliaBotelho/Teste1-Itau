@@ -1,0 +1,51 @@
+<form>
+    <img src="assets/task.png">
+
+    <input type="text" placeholder="Tarefa" class="form-control" name="nome" [(ngModel)]="task.nome">
+    <select class="form-control" name="status" [(ngModel)]="task.status">
+        <option value="FAZER">  Fazer</option>
+        <option value="ANDAMENTO">Em andamento</option>
+        <option value="FEITO">Feito</option>
+    </select>
+
+    <input type="button" value="Cadastrar" *ngIf="btnCadastro" class="btn btn-primary" (click)="cadastrar()">
+    <input type="button" value="Alterar" *ngIf="!btnCadastro" class="btn btn-warning" (click)="editar()">
+    <input type="button" value="Remover" *ngIf="!btnCadastro" class="btn btn-danger" (click)="remover()">
+    <input type="button" value="Cancelar" *ngIf="!btnCadastro" class="btn btn-secondary" (click)="cancelar()">
+</form>
+
+
+
+<table class="table" *ngIf="tabela">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Tarefa</th>
+            <th>Status</th>
+            <th>Selecionar</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let c of tasks; index as i">
+            <td>{{i+1}}</td>
+            <td>{{c.nome}}</td>
+            <td>
+                <div class="status-indicator" [ngClass]="{
+                    'status-feito': c.status === 'FEITO',
+                    'status-andamento': c.status === 'ANDAMENTO',
+                    'status-fazer': c.status === 'FAZER'
+                }"></div>
+            </td>
+            <td><button class="btn btn-success" (click)="selecionarTask(i)">Selecionar</button></td>
+        </tr>
+    </tbody>
+</table>
+
+<div class="legend">
+    <h4>Legenda:</h4>
+    <div><span class="status-indicator status-feito"></span> Fazer</div>
+    <div><span class="status-indicator status-andamento"></span> Fazendo</div>
+    <div><span class="status-indicator status-fazer"></span> Feito</div>
+</div>
+
+
