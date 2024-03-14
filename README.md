@@ -32,4 +32,8 @@ O Gerenciador de Tarefas é uma aplicação web desenvolvida para ajudar na orga
 
 ## Contato
 - Cecilia Botelho - cescbotelho@gmail.com
+
+### Observação
+As variáveis de configuração sensíveis, foram deixadas no código para fins de demonstração. No entanto, é altamente recomendável extrair essas variáveis para variáveis de ambiente ou arquivos de configuração externos em ambientes de produção para melhorar a segurança e a manutenção do projeto.
+
   
