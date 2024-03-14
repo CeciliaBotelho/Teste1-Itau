@@ -32,4 +32,4 @@ O Gerenciador de Tarefas é uma aplicação web desenvolvida para ajudar na orga
 
 ## Contato
 - Cecilia Botelho - cescbotelho@gmail.com
-- LinkedIn: [Seu Perfil](https://www.linkedin.com/seu_perfil)
+  
