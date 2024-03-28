@@ -3,7 +3,7 @@
 ![Badge](https://img.shields.io/badge/license-MIT-green)
 
 ## Descrição
-O Gerenciador de Tarefas é uma aplicação web desenvolvida para ajudar na organização e acompanhamento de tarefas pessoais ou de equipe. Ele oferece recursos de CRUD (criação, leitura, atualização e exclusão) para gerenciar uma lista de tarefas, permitindo aos usuários adicionar, visualizar, atualizar e excluir tarefas conforme necessário.
+O Gerenciador de Tarefas é uma aplicação web desenvolvida para ajudar na organização e acompanhamento de tarefas pessoais ou de equipe. Ele oferece recursos de CRUD (criação, leitura, atualização e exclusão) para gerenciar uma lista de tarefas, permitindo aos usuários adicionar, visualizar, atualizar e excluir tarefas conforme necessário
 
 ## Tecnologias Utilizadas
 - Front-end: Angular
